@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2B2626"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_margin="@dimen/margin"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:layout_height="45dp">
+
+        <EditText
+            android:gravity="center"
+            android:id="@+id/main_input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+
+
+            android:background="#FF9800"
+            android:ems="10"
+            android:hint="@string/write_here"
+            android:inputType="number"
+            />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="match_parent"
+            android:background="#B33434"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <TextView
+        android:id="@+id/ldpi"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+
+        android:layout_margin="@dimen/margin"
+        android:background="#4CAF50"
+        android:gravity="center"
+        android:hint="ldpi"
+        android:layoutDirection="inherit"
+        android:textAlignment="center"
+        android:textDirection="firstStrong"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main" />
+
+    <TextView
+        android:id="@+id/mdpi"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_margin="@dimen/margin"
+
+        android:background="#4CAF50"
+        android:gravity="center"
+        android:hint="mdpi"
+        android:layoutDirection="inherit"
+        android:textAlignment="center"
+        android:textDirection="firstStrong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ldpi" />
+
+    <TextView
+        android:id="@+id/hdpi"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_margin="@dimen/margin"
+
+
+        android:background="#4CAF50"
+        android:gravity="center"
+        android:hint="@string/hdpi"
+        android:layoutDirection="inherit"
+        android:textAlignment="center"
+        android:textDirection="firstStrong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mdpi" />
+    <TextView
+        android:id="@+id/xhdpi"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_margin="@dimen/margin"
+        android:background="#4CAF50"
+        android:gravity="center"
+        android:hint="@string/xhdpi"
+        android:layoutDirection="inherit"
+        android:textAlignment="center"
+        android:textDirection="firstStrong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hdpi" />
+    <TextView
+        android:id="@+id/xxhdpi"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_margin="@dimen/margin"
+        android:background="#4CAF50"
+        android:gravity="center"
+        android:hint="@string/xxhdpi"
+        android:layoutDirection="inherit"
+        android:textAlignment="center"
+        android:textDirection="firstStrong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xhdpi" />
+
+    <TextView
+        android:id="@+id/xxxhdpi"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_margin="@dimen/margin"
+        android:background="#4CAF50"
+        android:gravity="center"
+        android:hint="@string/xxxhdpi"
+        android:layoutDirection="inherit"
+        android:textAlignment="center"
+        android:textDirection="firstStrong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xxhdpi" />
+
+    <com.example.screensizehelper.utils.ui.MovableFloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginTop="32dp"
+
+        android:layout_marginEnd="48dp"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/ic_baseline_check_circle_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xxxhdpi"></com.example.screensizehelper.utils.ui.MovableFloatingActionButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

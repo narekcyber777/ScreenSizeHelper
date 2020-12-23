@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ScreenSizeHelper</string>
+    <string name="write_here">Write here</string>
+    <string name="xxxhdpi">xxxhdpi</string>
+    <string name="xxhdpi">xxhdpi</string>
+    <string name="xhdpi">xhdpi</string>
+    <string name="hdpi">hdpi</string>
+</resources>
